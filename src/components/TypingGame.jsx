@@ -62,6 +62,7 @@ const TypingGame = () => {
   };
 
   function startGame() {
+    setSeconds(0);
     setplaying(true);
     inputRef.current.value = "";
 
@@ -74,10 +75,6 @@ const TypingGame = () => {
     correctChar.current = 0;
     totalChar.current = 0;
     inputRef.current.focus();
-  }
-
-  function stopGame() {
-    gameOver();
   }
 
   //Looping through all the char again and increament the correct and incorrect ref and  accuracy
@@ -128,7 +125,6 @@ const TypingGame = () => {
       createdAt: new Date().getTime(),
     };
     setscorelist([...scorelist, currentRun]);
-    setSeconds(0);
   }
   return (
     <div className="relative h-full grid gap-6 w-full mt-16 px-4">
