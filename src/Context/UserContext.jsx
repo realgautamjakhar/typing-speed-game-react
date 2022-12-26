@@ -7,13 +7,6 @@ export const UserState = ({ children }) => {
   const [user, setuser] = useState([]);
   const [scorelist, setscorelist] = useState([]);
 
-  const userAuth = () => {
-    if (!localStorage.getItem("auth-token")) {
-      return false;
-    }
-    return true;
-  };
-
   const fetchUserScoreList = async () => {
     const response = await fetch(
       "https://typing-backend-three.vercel.app/api/score/fetchuserscore",
@@ -97,7 +90,6 @@ export const UserState = ({ children }) => {
         fetchleaderboard,
         leaderboard,
         userlogout,
-        userAuth,
       }}
     >
       {children}
