@@ -1,7 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import { useContext } from "react";
-import ScoreList from "../components/Scorelist";
+import ScoreList from "../components/ScoreList";
+
 import TypingGame from "../components/TypingGame";
 import UserContext from "../Context/UserContext";
 
