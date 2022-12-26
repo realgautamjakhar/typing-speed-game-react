@@ -128,6 +128,7 @@ const TypingGame = () => {
       createdAt: new Date().getTime(),
     };
     setscorelist([...scorelist, currentRun]);
+    setSeconds(0);
   }
   return (
     <div className="relative h-full grid gap-6 w-full mt-16 px-4">
