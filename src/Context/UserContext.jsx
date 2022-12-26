@@ -53,7 +53,6 @@ export const UserState = ({ children }) => {
   };
 
   const getuser = async () => {
-    console.log("jkashdjkashdd");
     const response = await fetch(
       "https://typing-backend-three.vercel.app/api/auth/getuser",
       {

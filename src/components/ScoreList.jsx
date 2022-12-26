@@ -8,7 +8,6 @@ const ScoreList = () => {
 
   useEffect(() => {
     fetchUserScoreList();
-    console.log(scorelist);
   }, []);
   return (
     <div className="mx-4">
