@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 *{
-      outline: 1px solid salmon;
+      /* outline: 1px solid salmon; */
       font-family: 'Quicksand', sans-serif;
 
 }
