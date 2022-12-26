@@ -72,7 +72,7 @@ const Login = () => {
         pauseOnHover
         theme="light"
       />
-      <div className="h-full w-full bg-[url('assets/blob.svg')] bg-no-repeat md:bg-center bg-bottom flex items-center justify-center">
+      <div className="h-full w-full bg-[url('/assets/blob.svg')] bg-no-repeat md:bg-center bg-bottom flex items-center justify-center">
         <Formik
           initialValues={{ email: "", password: "" }}
           validationSchema={Yup.object({

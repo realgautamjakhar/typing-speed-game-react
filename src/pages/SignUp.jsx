@@ -64,7 +64,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="h-full w-full bg-[url('assets/blob.svg')] bg-no-repeat md:bg-center bg-bottom flex items-center justify-center">
+    <div className="h-full w-full bg-[url('/assets/blob.svg')] bg-no-repeat md:bg-center bg-bottom flex items-center justify-center">
       <ToastContainer
         position="top-right"
         autoClose={5000}
