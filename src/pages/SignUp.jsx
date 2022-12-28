@@ -81,15 +81,17 @@ const SignUp = () => {
         initialValues={{ firstName: "", lastName: "", email: "", password: "" }}
         validationSchema={Yup.object({
           firstName: Yup.string()
+            .matches(/^[a-zA-Z ]+$/, "First name a valid name")
             .max(15, "Must be 15 characters or less")
-            .required("Required"),
+            .required("First name is required"),
           lastName: Yup.string()
+            .matches(/^[a-zA-Z ]+$/, "Last name a valid name")
             .max(20, "Must be 20 characters or less")
-            .required("Required"),
+            .required("Last name is required"),
           email: Yup.string()
             .email("Invalid email address")
-            .required("Required"),
-          password: Yup.string().required("Required"),
+            .required("Email is required"),
+          password: Yup.string().required("Password is required"),
         })}
         onSubmit={(values, { setSubmitting }) => {
           createUser(values);
